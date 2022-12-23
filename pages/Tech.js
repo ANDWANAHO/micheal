@@ -31,8 +31,9 @@ const Tech = ({blogs}) => {
     </Head>
       <div className='f-cards'>
          {TechBlogs.map(blog=>(
-    <Link href={'/'+ blog.fields.slug} legacyBehavior>
       <div key={blog.sys.id} className='cards'>
+         <Link href={'/'+ blog.fields.slug} legacyBehavior>
+          <a>
       <div className="card-headers">
       <Image className="thumbnail"
         src={'https:'+ blog.fields.thumbnail.fields.file.url}
@@ -52,9 +53,10 @@ const Tech = ({blogs}) => {
       {blog.fields.categorytd}
       </span>
       </div>
-      
+      </a>
+      </Link>
     </div>
-    </Link>
+   
    
    ))}
    </div>

@@ -28,6 +28,7 @@ const Header = () => {
           }
         }
     return ( 
+      <nav>
         <Navbar color="light" light container="md" expand="md" sticky={sticky ? "top" : ""}>
       <NavbarBrand href="/">Jan Micheal </NavbarBrand>
       <NavbarToggler onClick={toggle} />
@@ -55,6 +56,7 @@ const Header = () => {
         </Nav>
       </Collapse>
     </Navbar>
+    </nav>
      );
 }
  

@@ -14,9 +14,9 @@ const Latest = ({blogs}) => {
       </h2>
       <div className="f-cards">
      {blogs.map(blog=>(
-      <Link href={'/'+ blog.fields.slug} legacyBehavior>
-        
         <div key={blog.sys.id} className='cards'>
+          <Link href={'/'+ blog.fields.slug} passHref legacyBehavior>
+            <a>
         <div className="card-headers">
         <Image className="thumbnail"
           src={'https:'+ blog.fields.thumbnail.fields.file.url}
@@ -35,9 +35,10 @@ const Latest = ({blogs}) => {
         {blog.fields.categorytd}
         </span>
         </div>
-        
+        </a>
+        </Link>
       </div>
-      </Link>
+      
      
      ))}
      </div>

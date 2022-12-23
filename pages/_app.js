@@ -1,7 +1,6 @@
 import Layout from '../components/Layout'
 import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/header.css';
 import SEO from "@bradgarropy/next-seo"
 
 function MyApp({ Component, pageProps }) {

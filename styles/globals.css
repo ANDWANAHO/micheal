@@ -106,10 +106,12 @@ line-height: 3rem;
   align-items: center;
   justify-content: center;
   height: 50vh;
+  color: white;
 
 }
 .intro-div h1{
   text-align: center;
+ 
 }
 .thumbnail{
   width: 100%;
@@ -144,6 +146,21 @@ cursor: pointer;
 }
 .slug article{
   margin: 10px 10px;
+}
+.nav-item {
+  padding-left: 50px;
+}
+
+.navbar {
+  padding: 10px 0px;
+  line-height: 50px;
+  width: 100vw;
+}
+nav:hover{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
 }
 @media all and ( max-width: 500px) {
   .f-cards{
